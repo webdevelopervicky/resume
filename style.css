@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFCA05;
+    --secondary-color: #EBEBEB;
+    --lightdark-color: #212225;
+    --dark-color: #1A1B1C;
+    --bragrerss-color: #5D5D6A;
+    --container-color: #FFFFFF;
+}
+body{
+    cursor:default;
+
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(-20deg, #302d2d 0%, #9bc5c3 100%);
+    border-radius:5px;
+
+}
+
+.photo {
+    width: 100%;
+    height: 450px;
+    background-color: var(--lightdark-color);
+}
+
+.photo img {
+    filter: brightness(0.7);
+}
+
+.uldesign {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    bottom: -26px;
+    left: 17%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    z-index: 3;
+}
+
+.education {
+    height: 350px;
+    background-color: var(--dark-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+
+}
+
+.education p {
+
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.education h4 {
+    position: relative;
+}
+
+.education h4::after,
+.experties h4::after,
+.profile2 h4::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #FFCA05;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    border-radius: 25px;
+    transition:linear 0.5s;
+}
+.profile2 h4:hover::after{
+    width:100px ;
+}
+
+h4:hover::after{
+    background-color: red;
+    width: 120px;
+}
+
+.experties {
+    height: 400px;
+    background-color: var(--secondary-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+.experties h4 {
+    font-size: 25px;
+    position: relative;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 10px;
+    background-color: var(--bragrerss-color);
+}
+
+.progress-bar {
+    width: 80%;
+    background-color: #FFCA05;
+}
+
+.progtext {
+    font-size: 20px;
+    font-weight: 600;
+}
+.experience{
+    font-family: "Open Sans", sans-serif;
+    font-weight:500;
+}
+.reference{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.reference h4{
+    font-weight:600;
+}
+.interests1 h4{
+    font-family: "Open Sans", sans-serif;
+    font-weight:650;
+}
+.interests1 img:hover{
+    filter: drop-shadow(5px 5px 3px#2e2e2d);
+    
+}
+
+.contuct {
+    height:247px;
+    background-color: var(--secondary-color);
+}
+
+.phone {
+    line-height: 10px;
+}
+
+/*--right side contaend--*/
+
+.profile {
+    background-color: var(--secondary-color);
+
+}
+
+.name {
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-family: "Raleway";
+    font-weight: 400;
+
+}
+
+.uldesign1 {
+    width: max-content;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.profile2 {
+    font-size: 25px;
+}
+
+.profile2 h4 {
+    position: relative;
+}
+
+.para {
+    letter-spacing: 1px;
+    font-family: "Open Sans", sans-serif;
+    font-weight:500;
+}
+
+.experience h4 {
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 650;
+    font-size: 25px;
+}
+ .line{
+    width: 50px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: #FFCA05;
+ }
+ .container-fluid{
+    overflow: hidden;
+ }
+@media (max-width:900px) {
+    .name {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .uldesign {
+        display: none;
+    }
+
+    .education {
+        height: 400px;
+    }
+
+    .contuct.col-2 {
+        padding: 0px 50px;
+        margin-top: 10px;
+        background-color: red;
+    }
+}
